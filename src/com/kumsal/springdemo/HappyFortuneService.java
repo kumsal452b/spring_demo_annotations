@@ -1,10 +1,15 @@
 package com.kumsal.springdemo;
 
-public class HappyFortuneService {
+import org.springframework.stereotype.Component;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+@Component
+public class HappyFortuneService implements FortuneService {
+	@Override
+	public String getFortune() {
+		
+		return null;
 	}
+
+	
 
 }
