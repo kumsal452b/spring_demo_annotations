@@ -16,4 +16,10 @@ public class TennisCoach implements Coach {
 		return "Praticte your backhand volley";
 	}
 
+	@Override
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
+		return fortuneService.getFortune();
+	}
+
 }
