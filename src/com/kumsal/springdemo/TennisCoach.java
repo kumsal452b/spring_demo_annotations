@@ -15,8 +15,8 @@ public class TennisCoach implements Coach {
 		System.out.println(">>inside default consructor");
 	}
 	@Autowired
-	public void setFortuneService(FortuneService fortuneService) {
-		System.out.println(">>inside FortuneSerice");
+	public void kumsasgoway(FortuneService fortuneService) {
+		System.out.println(">>inside kumsal");
 		this.fortuneService = fortuneService;
 	}
 
