@@ -9,6 +9,15 @@ public class AnnotationBeanScopeDemoApp {
 		Coach theCoach=context.getBean("tennisCoach",Coach.class);
 	
 		Coach alphaCoach=context.getBean("tennisCoach",Coach.class);
+		
+		boolean result=(theCoach==alphaCoach);
+		
+		System.out.println("Pointing to the same object :" +result);
+		
+		System.out.println("Memory location for theCoach :"+theCoach);
+		
+		System.out.println("Memory location for aplhaCoach"+ alphaCoach);
+		
 	}
 
 }
