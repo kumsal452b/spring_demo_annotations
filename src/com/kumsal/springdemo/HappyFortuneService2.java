@@ -1,5 +1,8 @@
 package com.kumsal.springdemo;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class HappyFortuneService2 implements FortuneService {
 
 	@Override
