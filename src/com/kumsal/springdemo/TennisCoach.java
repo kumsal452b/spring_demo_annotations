@@ -1,5 +1,8 @@
 package com.kumsal.springdemo;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Scope;
@@ -34,6 +37,14 @@ public class TennisCoach implements Coach {
 	public String getDailyFortune() {
 		// TODO Auto-generated method stub
 		return fortuneService.getFortune();
+	}
+	@PostConstruct
+	public void doMyStartupSruff(){
+		System.out.println("inside init method doMyStartUpStaff");
+	}
+	@PreDestroy
+	public void doMyCleanupStuffYoyo(){
+		System.out.println("inside destroy method method doMyCleanupStuffYoyo");
 	}
 
 }
