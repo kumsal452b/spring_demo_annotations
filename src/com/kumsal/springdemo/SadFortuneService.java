@@ -1,5 +1,10 @@
 package com.kumsal.springdemo;
 
-public class SadFortuneService implements {
+public class SadFortuneService implements FortuneService {
 
+	@Override
+	public String getFortune() {
+		return "Today is a sad day";
+	}
+	
 }
