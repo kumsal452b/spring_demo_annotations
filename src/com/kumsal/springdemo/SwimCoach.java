@@ -1,11 +1,17 @@
 package com.kumsal.springdemo;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
 
-@PropertySource("")
+@PropertySource("classpath:sport.propeties")
 public class SwimCoach implements Coach {
 
 	FortuneService fortuneService;
+	@Value("{foo.team}")
+	private String team;
+	
+	@Value("{foo.email}")
+	private String emmai;
 	
 	public SwimCoach(FortuneService fortuneService) {
 		super();
