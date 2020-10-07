@@ -29,4 +29,13 @@ public class SwimCoach implements Coach {
 		return fortuneService.getFortune();
 	}
 
+	public String getTeam() {
+		return team;
+	}
+
+	public String getEmmai() {
+		return emmai;
+	}
+	
+	
 }
