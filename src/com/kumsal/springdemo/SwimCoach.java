@@ -1,5 +1,8 @@
 package com.kumsal.springdemo;
 
+import org.springframework.context.annotation.PropertySource;
+
+@PropertySource("")
 public class SwimCoach implements Coach {
 
 	FortuneService fortuneService;
