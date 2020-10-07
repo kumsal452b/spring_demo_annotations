@@ -10,6 +10,8 @@ public class SwimJavaConfigDemoApp {
 		Coach theCoach=context.getBean("swimCoach",Coach.class);
 		System.out.println(theCoach.getDailyWorkout());
 		System.out.println(theCoach.getDailyFortune());
+		SwimCoach nesne=new SwimCoach(null);
+		System.out.println(nesne.getTeam());
 		context.close();
 	}
 }
