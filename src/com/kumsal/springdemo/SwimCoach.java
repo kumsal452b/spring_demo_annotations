@@ -7,10 +7,10 @@ import org.springframework.context.annotation.PropertySource;
 public class SwimCoach implements Coach {
 	FortuneService fortuneService;
 	
-	@Value("{foo.team}")
+	@Value("${foo.team}")
 	private String team;
 	
-	@Value("{foo.email}")
+	@Value("${foo.email}")
 	private String emmai;
 	
 	public SwimCoach(FortuneService fortuneService) {
