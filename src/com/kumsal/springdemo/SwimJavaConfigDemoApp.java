@@ -8,10 +8,11 @@ public class SwimJavaConfigDemoApp {
 		AnnotationConfigApplicationContext context=new AnnotationConfigApplicationContext(SportConfig.class);
 
 		Coach theCoach=context.getBean("swimCoach",Coach.class);
+		SwimCoach sCoach=context.getBean("swimCoach",SwimCoach.class);
 		System.out.println(theCoach.getDailyWorkout());
 		System.out.println(theCoach.getDailyFortune());
-		SwimCoach nesne=new SwimCoach(null);
-		System.out.println(nesne.getTeam());
+		System.out.println(sCoach.getEmmai());
+		System.out.println(sCoach.getTeam());
 		context.close();
 	}
 }
