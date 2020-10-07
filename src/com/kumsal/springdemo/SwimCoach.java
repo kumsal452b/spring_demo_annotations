@@ -5,8 +5,8 @@ import org.springframework.context.annotation.PropertySource;
 
 
 public class SwimCoach implements Coach {
-
 	FortuneService fortuneService;
+	
 	@Value("{foo.team}")
 	private String team;
 	
